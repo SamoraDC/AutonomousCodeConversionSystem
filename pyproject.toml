@@ -1,0 +1,24 @@
+[project]
+name = "autonomous-code-converter"
+version = "0.1.0"
+description = "Sistema Agêntico Avançado de Conversão de Código para C++"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "black>=25.1.0",
+    "isort>=6.0.1",
+    "langgraph>=0.4.8",
+    "mypy>=1.16.1",
+    "openai>=1.90.0",
+    "pydantic-ai>=0.3.2",
+    "pytest>=8.4.1",
+    "pytest-asyncio>=1.0.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_paths = ["src"]
+
+[tool.mypy]
+python_version = "3.12"
+mypy_path = ["src"]
